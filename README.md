@@ -1,4 +1,4 @@
-# STARTER-team01
+# w24-7pm-3-team01
 
 Lab instructions: <https://ucsb-cs156.github.io/w24/lab/team01.html>
 
@@ -14,11 +14,6 @@ Lab instructions: <https://ucsb-cs156.github.io/w24/lab/team01.html>
 |           |           | `ZipCodeQueryService`       | `ZipCodeController`       |
 ```
 
-
-* TODO: Change the title of this README
-  in the text `# STARTER-team01` above
-  to match the name of your repo, i. e., `w24-5pm-2-team01`, then delete
-  this TODO item.
 
 * TODO: Correct the links to repo below,
   then delete this TODO.  Replace it with
