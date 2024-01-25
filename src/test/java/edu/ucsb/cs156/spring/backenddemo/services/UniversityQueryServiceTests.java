@@ -25,7 +25,7 @@ public class UniversityQueryServiceTests {
     public void test_getJSON() {
 
         //Start here
-        String name = "Oxnard";
+        String name = "Stanford";
         String expectedURL = UniversityQueryService.ENDPOINT.replace("{name}", name);
 
         String fakeJsonResult = "{ \"fake\" : \"result\" }";
