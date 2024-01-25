@@ -22,6 +22,7 @@ public class TidesQueryService {
 
     public TidesQueryService(RestTemplateBuilder restTemplateBuilder) {
         restTemplate = restTemplateBuilder.build();
+        
     }
 
     // Documentation for endpoint is at: https://api.tidesandcurrents.noaa.gov/api/prod/
