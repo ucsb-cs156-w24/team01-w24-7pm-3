@@ -19,6 +19,6 @@ public class LocationQueryService {
     public static final String ENDPOINT = "";
 
     public String getJSON(String location) throws HttpClientErrorException {
-        return "";
+        return "https://nominatim.openstreetmap.org/search/search.php?q={location}&format=jsonv2";
     }
 }
