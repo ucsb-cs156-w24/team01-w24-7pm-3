@@ -41,7 +41,7 @@ public class LocationQueryServiceTests {
     @Test
     public void test_getJSON() throws JsonProcessingException{
 
-        String location = "Isla Vista";
+        String location = "IslaVista";
         String expectedURL = locationQueryService.ENDPOINT.replace("{location}", location);
 
         String fakeJsonResult = "{ \"fake\" : \"result\" }";
