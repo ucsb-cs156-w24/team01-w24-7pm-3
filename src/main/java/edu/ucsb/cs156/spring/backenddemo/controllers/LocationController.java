@@ -27,7 +27,7 @@ import edu.ucsb.cs156.spring.backenddemo.services.LocationQueryService;
 
 @Tag(name="Location Information")
 @RestController
-@RequestMapping("/api/locationquery")
+@RequestMapping("/api/locations")
 public class LocationController {
 
     ObjectMapper mapper = new ObjectMapper();
@@ -35,7 +35,7 @@ public class LocationController {
     @Autowired
     LocationQueryService locationQueryService;
 
-    @Operation(summary = "Get location data from a location", description = "I'm not too sure what I'm supposed to get ngl")
+    @Operation(summary = "Get location data from a location", description = "Get location data from a location")
     @GetMapping("/get")
     public ResponseEntity<String> getLocationDetails(
         @Parameter(name="location", description="location", example="islaVista") @RequestParam String location
