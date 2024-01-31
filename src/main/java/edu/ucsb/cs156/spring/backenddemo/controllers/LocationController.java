@@ -38,7 +38,7 @@ public class LocationController {
     @Operation(summary = "Get location data from a location", description = "Get location data from a location")
     @GetMapping("/get")
     public ResponseEntity<String> getLocationDetails(
-        @Parameter(name="location", description="location", example="islaVista") @RequestParam String location
+        @Parameter(name="location", description="location", example="Isla Vista") @RequestParam String location
     ) throws JsonProcessingException {
         String result = locationQueryService.getJSON(location);
         return ResponseEntity.ok().body(result);
