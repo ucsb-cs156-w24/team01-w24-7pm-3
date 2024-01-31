@@ -29,7 +29,7 @@ public class UniversityController {
     @Autowired
     UniversityQueryService universityQueryService;
 
-    @Operation(summary="Get universities and their basic information")
+    @Operation(summary="Get universities and their basic information", description = "JSON return format documented here: https://github.com/Hipo/university-domains-list")
     @GetMapping("/get")
     public ResponseEntity<String> getCountryCodes(
         @Parameter(name="name", example="Stanford") @RequestParam String name
