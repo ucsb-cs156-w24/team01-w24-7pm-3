@@ -18,12 +18,12 @@ import org.springframework.web.client.HttpClientErrorException;
 
 @Slf4j
 @Service
-public class PublicHolidayQueryService {
+public class HolidayQueryService {
 
 
     private final RestTemplate restTemplate;
 
-    public PublicHolidayQueryService(RestTemplateBuilder restTemplateBuilder) {
+    public HolidayQueryService(RestTemplateBuilder restTemplateBuilder) {
         restTemplate = restTemplateBuilder.build();
     }
 

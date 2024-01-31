@@ -10,7 +10,7 @@ import org.springframework.test.web.servlet.MockMvc;
 import org.springframework.test.web.servlet.MvcResult;
 
 import edu.ucsb.cs156.spring.backenddemo.services.CollegeSubredditQueryService;
-import edu.ucsb.cs156.spring.backenddemo.services.PublicHolidayQueryService;
+import edu.ucsb.cs156.spring.backenddemo.services.HolidayQueryService;
 
 
 import static org.mockito.ArgumentMatchers.eq;
