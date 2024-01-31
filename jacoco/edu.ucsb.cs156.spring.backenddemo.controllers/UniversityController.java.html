@@ -29,7 +29,7 @@ import io.swagger.v3.oas.annotations.tags.Tag;
     @Autowired
     UniversityQueryService universityQueryService;
 
-    @Operation(summary=&quot;Get universities and their basic information&quot;)
+    @Operation(summary=&quot;Get universities and their basic information&quot;, description = &quot;JSON return format documented here: https://github.com/Hipo/university-domains-list&quot;)
     @GetMapping(&quot;/get&quot;)
     public ResponseEntity&lt;String&gt; getCountryCodes(
         @Parameter(name=&quot;name&quot;, example=&quot;Stanford&quot;) @RequestParam String name
