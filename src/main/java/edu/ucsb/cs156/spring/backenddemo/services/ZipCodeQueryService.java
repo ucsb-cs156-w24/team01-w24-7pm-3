@@ -26,7 +26,7 @@ public class ZipCodeQueryService {
         restTemplate = restTemplateBuilder.build();
     }
 
-    public static final String ENDPOINT = "http://api.zippopotam.us/us/{zipcode}";
+    public final String ENDPOINT = "http://api.zippopotam.us/us/{zipcode}";
 
     public String getJSON(String zipcode) throws HttpClientErrorException {
         log.info("zipcode={}", zipcode);
@@ -40,8 +40,6 @@ public class ZipCodeQueryService {
 
         ResponseEntity<String> re = restTemplate.exchange(ENDPOINT, HttpMethod.GET, entity, String.class,
                 uriVariables);
-
         return re.getBody();
-        //return "THIS IS NOT A CORRECT RESULT";
     }
 }

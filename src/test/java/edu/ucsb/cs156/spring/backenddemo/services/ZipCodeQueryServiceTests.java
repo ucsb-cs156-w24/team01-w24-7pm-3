@@ -24,7 +24,7 @@ public class ZipCodeQueryServiceTests {
     @Test
     public void test_getJSON() {
 
-        String zipcode = "94565";
+        String zipcode = "93117";
         String expectedURL = ZipCodeQueryService.ENDPOINT.replace("{zipcode}", zipcode);
 
         String fakeJsonResult = "{ \"fake\" : \"result\" }";
